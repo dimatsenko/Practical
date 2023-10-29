@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp2", "WinFormsApp2\WinFormsApp2.csproj", "{1FDEFE7B-9447-48C2-B1DF-7BC39AE44A3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pract", "WinFormsApp2\Pract.csproj", "{1FDEFE7B-9447-48C2-B1DF-7BC39AE44A3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

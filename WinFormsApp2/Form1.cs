@@ -48,5 +48,34 @@ namespace WinFormsApp2
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void îäíîâèì³ğíèéÌàñèâToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Pract.Form2 f = new Pract.Form2();
+            f.Show();
+            this.Hide();
+        }
+
+        private void ğîáòàÇÌàñèâàìèToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void äâîâèì³ğíèéToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Pract.Form3 f = new Pract.Form3();
+            f.Show();
+            this.Hide();
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
