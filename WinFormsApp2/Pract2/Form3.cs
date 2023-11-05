@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TwoDimentionalArray;
+using Pract.Pract2;
 
 namespace Pract
 {
@@ -33,11 +33,23 @@ namespace Pract
         private void button2_Click(object sender, EventArgs e)
         {
             int n = 0;
-            n = Convert.ToInt32(textBox1.Text);
+            try
+            {
+                n = Convert.ToInt32(textBox1.Text);
+
+                if (n <= 4)
+                {
+                    MessageBox.Show("Value of 'n' should be greater than 4.");
+                    return;
+                }
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Invalid input. Please enter a valid integer.");
+                return; 
+            }
 
             Matrix matrix = new Matrix(n);
-
-
 
             dataGridView1.Rows.Clear();
             dataGridView1.Columns.Clear();
@@ -50,8 +62,7 @@ namespace Pract
                 column.Width = cellSize;
             }
 
-
-            // Fill the DataGridView with matrix data
+      
             for (int i = 0; i < n; i++)
             {
                 dataGridView1.Rows.Add();
@@ -64,11 +75,11 @@ namespace Pract
             int minElement = matrix.FindMinElement(out int row, out int col);
             int distanceToDiagonal = matrix.GetDistanceToDiagonal(row, col);
 
-            label2.Text = "Minimum Element: " + minElement; 
+            label2.Text = "Minimum Element: " + minElement;
             label3.Text = "Distance to Diagonal: " + distanceToDiagonal;
         }
 
-        
+
 
 
 

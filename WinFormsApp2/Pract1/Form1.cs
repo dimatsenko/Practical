@@ -1,4 +1,5 @@
-using MainCalculations;
+using Pract.Pract1;
+using Pract.Pract3;
 
 namespace WinFormsApp2
 {
@@ -76,6 +77,13 @@ namespace WinFormsApp2
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void unitTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Pract.Pract3.Form4 f = new Pract.Pract3.Form4();
+            f.Show();
+            this.Hide();
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MainCalculations
+namespace Pract.Pract1
 {
     internal class Tabul
     {
@@ -14,7 +14,7 @@ namespace MainCalculations
 
         private double f1(double x)
         {
-            return (Math.Tan(x + 1) * Math.Tan(x + 1)) / (Math.Pow(x, 4) + 2 * Math.Pow(x, 3) - x);
+            return Math.Tan(x + 1) * Math.Tan(x + 1) / (Math.Pow(x, 4) + 2 * Math.Pow(x, 3) - x);
         }
 
         private double f2(double x)
@@ -24,7 +24,7 @@ namespace MainCalculations
 
         private double f3(double x)
         {
-            return (Math.Cos(x + 2) * Math.Cos(x + 2)) / (Math.Pow(Math.E, -2 * x) + Math.Pow(3 * x * x + 1, 1/4));
+            return Math.Cos(x + 2) * Math.Cos(x + 2) / (Math.Pow(Math.E, -2 * x) + Math.Pow(3 * x * x + 1, 1 / 4));
         }
 
 
@@ -38,15 +38,15 @@ namespace MainCalculations
                 {
                     y = f1(x);
                 }
-                else 
-                {
-                    if ((x >= 0) && (x < a))
-                     {
-                    y = f2(x);
-                     }
                 else
-                
-                    y = f3(x);
+                {
+                    if (x >= 0 && x < a)
+                    {
+                        y = f2(x);
+                    }
+                    else
+
+                        y = f3(x);
                 }
 
                 xy[i, 0] = x;

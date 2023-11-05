@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OneDimentionalArray
+namespace Pract.Pract2
 {
     internal class NovemberTemperatureData
     {
-        private double[] temperatureData ; // Масив для збереження даних про температуру
+        private double[] temperatureData; // Масив для збереження даних про температуру
 
 
         public NovemberTemperatureData(double[] data)

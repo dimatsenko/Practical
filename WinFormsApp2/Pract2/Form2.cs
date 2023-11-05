@@ -8,8 +8,7 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using OneDimentionalArray;
-
+using Pract.Pract2;
 
 namespace Pract
 {
