@@ -50,6 +50,7 @@
             this.одновимірнийМасивToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.двовимірнийToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unitTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.файлиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -188,7 +189,8 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.робтаЗМасивамиToolStripMenuItem,
-            this.unitTestToolStripMenuItem});
+            this.unitTestToolStripMenuItem,
+            this.файлиToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(957, 28);
@@ -225,6 +227,13 @@
             this.unitTestToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
             this.unitTestToolStripMenuItem.Text = "Unit Test";
             this.unitTestToolStripMenuItem.Click += new System.EventHandler(this.unitTestToolStripMenuItem_Click);
+            // 
+            // файлиToolStripMenuItem
+            // 
+            this.файлиToolStripMenuItem.Name = "файлиToolStripMenuItem";
+            this.файлиToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.файлиToolStripMenuItem.Text = "Файли";
+            this.файлиToolStripMenuItem.Click += new System.EventHandler(this.файлиToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -276,5 +285,6 @@
         private ToolStripMenuItem одновимірнийМасивToolStripMenuItem;
         private ToolStripMenuItem двовимірнийToolStripMenuItem;
         private ToolStripMenuItem unitTestToolStripMenuItem;
+        private ToolStripMenuItem файлиToolStripMenuItem;
     }
 }

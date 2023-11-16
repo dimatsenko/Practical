@@ -47,7 +47,7 @@ namespace Pract.Pract3
                 int b = Convert.ToInt32(this.textBox2.Text);
 
                 // Очищаємо попередні значення на Label перед виведенням нового результату
-                label3.Text = "Резуьтат: ";
+                label3.Text = "результат: ";
 
                 CalculationsAB calculations = new CalculationsAB(a, b);
                 int result = calculations.Count();
@@ -73,7 +73,7 @@ namespace Pract.Pract3
                 int c = Convert.ToInt32(this.textBox5.Text);
 
                 // Очищаємо попередні значення на Label перед виведенням нового результату
-                label4.Text = "Результат: ";
+                label4.Text = "результат: ";
 
                 CalculationsABC calculations = new CalculationsABC(a, b, c);
                 int result = calculations.D();

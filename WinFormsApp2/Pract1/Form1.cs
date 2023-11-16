@@ -85,5 +85,12 @@ namespace WinFormsApp2
             f.Show();
             this.Hide();
         }
+
+        private void Ù‡ÈÎËToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Pract.Pract4.Form1 f = new Pract.Pract4.Form1();
+            f.Show();
+            this.Hide();
+        }
     }
 }
